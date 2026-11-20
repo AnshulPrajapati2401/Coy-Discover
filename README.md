@@ -1,4 +1,4 @@
-# Coy Discover 💖 — Swipe-Based Discovery Feature
+# Coy Discover — Swipe-Based Discovery Feature
 
 A mobile-first, swipe-based discovery feature built as a standalone implementation for **Coy**, adhering to Coy's signature playful neo-brutalist aesthetic, privacy-first matching engine, and seamless mobile drag interactions.
 
