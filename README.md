@@ -67,52 +67,6 @@ npm run build
 npm run start
 ```
 
----
-
-## 🔌 Backend API Specification
-
-All endpoints are accessible both directly (e.g. `/feed`) and with the `/api` prefix (e.g. `/api/feed`).
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/feed` or `/api/feed` | Returns profiles the logged-in user (`user_me`) has not yet swiped on. `likedMe` is **always omitted**. |
-| `POST` | `/swipe` or `/api/swipe` | Records a swipe (`{ "profileId": string, "action": "like" \| "pass" }`). Returns `{ "isMatch": boolean, "matchProfile": SafeProfile \| null }`. |
-| `GET` | `/matches` or `/api/matches` | Returns all mutual matches made by the user. |
-| `POST` | `/reset` or `/api/reset` | Resets swipes and matches back to pristine state for repeatable demoing. |
-
-### Example cURL Commands
-
-#### 1. Fetch Feed
-```bash
-curl -s http://localhost:3000/feed
-```
-
-#### 2. Swipe Left (Pass)
-```bash
-curl -s -X POST http://localhost:3000/swipe \
-  -H "Content-Type: application/json" \
-  -d '{"profileId": "coy_01", "action": "pass"}'
-```
-
-#### 3. Swipe Right (Like — Creates Mutual Match with Seeded Profile coy_02)
-```bash
-curl -s -X POST http://localhost:3000/swipe \
-  -H "Content-Type: application/json" \
-  -d '{"profileId": "coy_02", "action": "like"}'
-```
-
-#### 4. Fetch Mutual Matches
-```bash
-curl -s http://localhost:3000/matches
-```
-
-#### 5. Reset Demo Feed
-```bash
-curl -s -X POST http://localhost:3000/reset
-```
-
----
-
 ## 📁 Repository Structure
 
 ```
