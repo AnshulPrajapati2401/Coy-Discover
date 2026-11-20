@@ -44,8 +44,8 @@ A mobile-first, swipe-based discovery feature built as a standalone implementati
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
-cd coy-discover
+git clone https://github.com/AnshulPrajapati2401/Coy-Discover.git
+cd Coy-Discover
 npm install
 ```
 
