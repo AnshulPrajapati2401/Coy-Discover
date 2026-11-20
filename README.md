@@ -36,9 +36,6 @@ A mobile-first, swipe-based discovery feature built as a standalone implementati
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS (custom neo-brutalist theme matching Coy's design system: hot pink `#FF2E7E`, `#111111` bold borders, `shadow-hard`, and soft pastel palettes)
-- **Icons**: Lucide React
-- **Confetti**: Canvas-Confetti
 
 ---
 
